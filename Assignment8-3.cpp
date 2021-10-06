@@ -19,6 +19,9 @@ int main() {
   {
     int min,minidx;
     min = numbers[ith];
+
+    minidx = ith;
+
     for(int i =ith;i<N;i++)
     {
       if(min > numbers[i])
@@ -27,7 +30,7 @@ int main() {
         minidx = i;
       }
     }
-    return ith;
+    return min;
   }
 
   int printArray(int a[], int x)
